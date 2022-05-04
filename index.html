@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body>
+		<div id="contenedor-form">
+			<form action="#" method="post" >
+				<h1>Formulario</h1>
+				<p class="nombre">
+					<input type="text" class="input" placeholder="Nombre" id="nombre" name="nombre" autocomplete="off" required>
+				</p>
+				<p class="apellido">
+					<input type="text" class="input" placeholder="apellido" id="apellido" name="apellido" autocomplete="off" required>
+				</p>
+				
+				<p class="email">
+					<input type="email" class="input" placeholder="Email*" id="email" name="email" autocomplete="off" required>
+				</p>
+				<p class="asunto">
+					<input type="text" class="input" placeholder="asunto" id="asunto" name="asunto"  autocomplete="off" required>
+				</p>
+				<p class="telefono">
+					<input type="number" class="input" placeholder="Telefono*" id="telefono" name="telefono"  autocomplete="off" required>
+				</p>
+				<p class="edad">
+					<input type="number" class="input" placeholder="Edad*" id="edad" name="edad"  autocomplete="off" required>
+				</p>
+				<p class="direccion">
+					<input type="text" class="input" placeholder="Direccion*" id="direccion" name="direccion"  autocomplete="off" required>
+				</p>
+				<p class="carrera">
+					<input type="text" class="input" placeholder="Carrera*" id="carrera" name="carrera"  autocomplete="off" required>
+				</p>
+				<p class="grado">
+					<input type="number" class="input" placeholder="grado*" id="grado" name="grado"  autocomplete="off" required>
+				</p>
+				
+				<p class="mensaje">
+					<textarea class="input" id="mensaje" placeholder="Mensaje" name="mensaje"  autocomplete="off" required></textarea>
+				</p>
+				
+				<div class="enviar">
+					<!--<input type="submit" value="ENVIAR" id="enviar"/>-->
+					<input type="submit" value="Enviar" onclick="pregunta()"  id="enviar"/>
+
+
+					<div class="transicion"></div>
+				</div>
+				<p>
+					<input type="text" class="input" placeholder="Mauricio Moedano,Dorle Lopez, Daniela Valencia " disabled=»disabled»>
+				</p>
+			</form>
+			<script href="java.js">
+			function pregunta(){
+    if (confirm('Formulario enviado!')){
+    }
+}
+			</script>
+		</div>
+	</body>
+</html>
